@@ -1,0 +1,98 @@
+/* ── styles.css ── */
+/* VERS Design System — global entry point. Consumers link this one file. */
+/* ── tokens/fonts.css ── */
+/* VERS brand webfonts. Nebulica = display/UI. Elgraine = body/editorial. */
+/* @font-face Nebulica 100 normal: declared by tokens.json (fonts/Nebulica-Thin.otf) */
+/* @font-face Nebulica 200 normal: declared by tokens.json (fonts/Nebulica-ExtraLight.otf) */
+/* @font-face Nebulica 300 normal: declared by tokens.json (fonts/Nebulica-Light.otf) */
+/* @font-face Nebulica 400 normal: declared by tokens.json (fonts/Nebulica-Regular.otf) */
+/* @font-face Nebulica 500 normal: declared by tokens.json (fonts/Nebulica-Medium.otf) */
+/* @font-face Nebulica 600 normal: declared by tokens.json (fonts/Nebulica-SemiBold.otf) */
+/* @font-face Nebulica 700 normal: declared by tokens.json (fonts/Nebulica-Bold.otf) */
+/* @font-face Nebulica 800 normal: declared by tokens.json (fonts/Nebulica-ExtraBold.otf) */
+/* @font-face Nebulica 900 normal: declared by tokens.json (fonts/Nebulica-Black.otf) */
+/* @font-face Elgraine 300 normal: declared by tokens.json (fonts/Elgraine-Light.otf) */
+/* @font-face Elgraine 400 normal: declared by tokens.json (fonts/Elgraine-Regular.otf) */
+/* @font-face Elgraine 400 italic: declared by tokens.json (fonts/Elgraine-Italic.otf) */
+/* @font-face Elgraine 500 normal: declared by tokens.json (fonts/Elgraine-Medium.otf) */
+/* @font-face Elgraine 600 normal: declared by tokens.json (fonts/Elgraine-SemiBold.otf) */
+/* @font-face Elgraine 700 normal: declared by tokens.json (fonts/Elgraine-Bold.otf) */
+/* @font-face Elgraine 800 normal: declared by tokens.json (fonts/Elgraine-ExtraBold.otf) */
+/* @font-face Elgraine 900 normal: declared by tokens.json (fonts/Elgraine-Black.otf) */
+/* @font-face Elgraine 900 italic: declared by tokens.json (fonts/Elgraine-BlackItalic.otf) */
+
+/* ── styles.css ── */
+
+/* ── tokens/colors.css ── */
+/* VERS colour system. Base values sampled directly from the official Grafismos_Vers artwork. */
+:root{ /* @kind other */
+}
+
+/* Dark scope — institutional black ground, the default for covers and hero sections. */
+.vers-dark{
+}
+
+/* Indigo scope — institutional decks, proposals, brandbook covers. */
+.vers-indigo{
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/typography.css ── */
+/* VERS typography. Nebulica carries titles, labels and UI. Elgraine carries body and editorial copy. */
+:root{ /* @kind other */
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/spacing.css ── */
+/* VERS spacing — 4px base. Exhibition-scale layouts use the 64/96/128 end of the scale. */
+:root{
+
+  --gutter-page:clamp(24px,5vw,96px); /* @kind spacing */
+  --gutter-section:clamp(64px,9vw,160px);
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/effects.css ── */
+/* VERS effects. The system is square-cornered and print-led: radii and shadows are used sparingly. */
+:root{ /* @kind other */
+}
+
+/* ── styles.css ── */
+
+/* ── tokens/base.css ── */
+/* VERS base layer — element defaults every consuming page inherits. */
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--surface-page);color:var(--text-primary);font-family:var(--font-body);font-size:var(--size-body-m);line-height:var(--leading-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:var(--weight-bold);line-height:var(--leading-heading);letter-spacing:var(--tracking-heading);margin:0}
+h1{font-size:var(--size-display-m);font-weight:var(--weight-black);line-height:var(--leading-display);letter-spacing:var(--tracking-display)}
+h2{font-size:var(--size-heading-l)}
+h3{font-size:var(--size-heading-m)}
+h4{font-size:var(--size-heading-s)}
+p{margin:0;text-wrap:pretty}
+a{color:var(--link-color);text-decoration:none;border-bottom:1px solid currentColor;transition:color var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard)}
+a:hover{color:var(--link-color-hover)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+strong,b{font-weight:var(--weight-bold)}
+small{font-family:var(--font-ui);font-size:var(--size-caption)}
+img{display:block;max-width:100%}
+hr{border:0;border-top:var(--border-rule) solid var(--border-strong);margin:var(--space-6) 0}
+::selection{background:var(--vers-lime);color:var(--vers-black)}
+
+/* ── styles.css ── */
+
+
+/* ── tokens/fonts.css ── */
+
+/* ── tokens/colors.css ── */
+
+/* ── tokens/typography.css ── */
+
+/* ── tokens/spacing.css ── */
+
+/* ── tokens/effects.css ── */
+
+/* ── tokens/base.css ── */
+
