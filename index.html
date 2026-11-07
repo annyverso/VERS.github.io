@@ -1,6 +1,213 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VERS — Website UI kit</title>
-<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="vendor/bundle.css">
-<style>html,body{margin:0;background:var(--vers-white)}.toast-slot{position:fixed;right:24px;bottom:24px;z-index:200;display:grid;gap:10px}</style></head>
-<body><div id="root"></div>
-<script src="vendor/react.production.min.js"></script><script src="vendor/react-dom.production.min.js"></script>
-<script src="vendor/bundle.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VERS · Onde a cultura ganha presença</title>
+<meta name="description" content="A VERS é uma produtora e distribuidora de cultura imersiva: produz, distribui, materializa e gerencia obras em realidade virtual.">
+<meta name="theme-color" content="#191919">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="VERS · Onde a cultura ganha presença">
+<meta property="og:description" content="A VERS é uma produtora e distribuidora de cultura imersiva: produz, distribui, materializa e gerencia obras em realidade virtual.">
+<meta property="og:image" content="assets/photos/vr-sunset-wide.jpg">
+<link rel="icon" href="assets/Icones/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/Icones/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/Icones/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script>try{if(sessionStorage.getItem('vers-portal')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('portal-in')}catch(e){}</script>
+<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="site/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "VERS", "description": "Produtora e distribuidora de cultura imersiva", "email": "contato@vers.com.br", "sameAs": ["https://www.instagram.com/vers_xr"]}</script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg" aria-label="Principal">
+    <a class="brand me-auto" href="index.html"><img src="assets/graphics/logotipo-white.png" alt="VERS, início" width="80" height="22"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Início</a></li><li class="nav-item"><a class="nav-link" href="produtos-e-servicos.html">Produtos e Serviços</a></li><li class="nav-item"><a class="nav-link" href="vers-apresenta.html">Catálogo</a></li><li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li><li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li></ul>
+      <a class="btn-v accent sm ms-lg-3" href="contato.html">Falar com a VERS</a>
+    </div>
+  </nav>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<section class="hero vers-dark" data-pixel-portal data-e="excitement" aria-labelledby="hero-t">
+  <img class="hero-photo" src="assets/photos/vr-sunset-wide.jpg" alt="Visitante com óculos de realidade virtual em uma sessão do Circuito Sesc de Artes" width="2000" height="1333">
+  <div class="protect-left"></div>
+  <div class="protect-bottom"></div>
+  <div class="hero-copy">
+    <p class="descriptor">Produtora e distribuidora de cultura imersiva</p>
+    <h1 id="hero-t"><span class="w5">Onde a cultura</span><span class="w9">ganha presença</span></h1>
+    <div class="actions">
+      <a class="btn-v accent lg" href="vers-apresenta.html">Conhecer o catálogo</a>
+      <a class="btn-v outline-white lg" href="contato.html">Falar com a VERS</a>
+    </div>
+    <p class="play-hint"><i aria-hidden="true"></i><a href="#nucleo" data-cross>Atravessar o portal<span class="hint-gl"> · ou clique no portal da foto</span></a></p>
+  </div>
+</section>
+
+<section class="section g-paper" id="nucleo" data-e="entry" tabindex="-1">
+  <div class="wrap"><div class="row g-5">
+    <div class="col-lg-5 d-grid gap-4 align-content-start">
+      <p class="eyebrow rule">Núcleo de marca</p>
+      <h2 class="nucleo-title">A tecnologia nunca foi o fim. Ela é o meio.</h2>
+    </div>
+    <div class="col-lg-6 offset-lg-1 d-grid gap-4">
+      <p class="body-xl">Presença não é apenas o efeito de estar dentro de uma experiência. É a passagem de uma obra da representação para a vivência.</p>
+      <p class="secondary" style="max-width:var(--measure-prose)">A VERS existe para transformar obras, narrativas, patrimônios, memórias e conhecimentos em experiências imersivas capazes de ocupar o espaço, encontrar o público e circular entre instituições, territórios e circuitos culturais.</p>
+      <p class="nucleo-tag">A obra é vivida a partir de dentro.</p>
+    </div>
+  </div></div>
+</section>
+
+<section class="section g-indigo vers-indigo" id="verbos" data-e="engagement">
+  <div class="wrap">
+    <header class="sec-head"><p class="eyebrow rule">Os verbos da VERS</p><h2 class="sec-title">Produzir. Distribuir. Materializar. Gerenciar.</h2><p class="sec-lede">Os verbos se atravessam e se sustentam. A VERS produz com rigor de quem opera em escala.</p></header>
+    <p class="premissa">A instituição contrata um <b>serviço</b> ou um <b>produto</b> da VERS para exibir uma <b>obra</b>. Escolha um verbo e atravesse o mapa.</p>
+    <div class="map" data-map>
+      <div class="map-stage" data-map-stage aria-hidden="true"></div>
+      <div class="map-panel">
+        <div class="map-tabs" role="tablist" aria-label="Os verbos da VERS"><button type="button" role="tab" id="vt-0" aria-controls="vp-0" aria-selected="true" data-verbo="0"><span class="n">01</span>Produzir</button><button type="button" role="tab" id="vt-1" aria-controls="vp-1" aria-selected="false" data-verbo="1"><span class="n">02</span>Distribuir</button><button type="button" role="tab" id="vt-2" aria-controls="vp-2" aria-selected="false" data-verbo="2"><span class="n">03</span>Materializar</button><button type="button" role="tab" id="vt-3" aria-controls="vp-3" aria-selected="false" data-verbo="3"><span class="n">04</span>Gerenciar</button></div>
+        <div class="verbo" role="tabpanel" id="vp-0" aria-labelledby="vt-0" data-verbo-panel="0">
+  <p class="ent ent-obra"><span>Obra</span>A VERS faz a obra</p>
+  <h3>Produzir</h3>
+  <p>Quando a VERS cria: concebe, dirige, desenvolve e realiza. É o verbo da obra autoral própria.</p>
+  <ul><li>Pesquisa e direção criativa</li><li>Design narrativo e de experiência</li><li>Direção de arte e som espacial</li></ul>
+  <p class="proof"><span>Prova</span> <a href="projeto-tinta-e-fogo.html">Tinta &amp; Fogo: 2 prêmios internacionais</a></p>
+  <p class="mt-2"><a class="btn-v accent" href="contato.html?frente=comissionamento">Comissionar uma obra</a></p>
+</div><div class="verbo" role="tabpanel" id="vp-1" aria-labelledby="vt-1" data-verbo-panel="1">
+  <p class="ent ent-catalogo"><span>Catálogo</span>A VERS leva a obra a circular</p>
+  <h3>Distribuir</h3>
+  <p>Quando a VERS escolhe uma obra, negocia seus direitos, adapta sua apresentação a um território e estabelece as condições para que ela circule. É o verbo do VERS Apresenta.</p>
+  <ul><li>Curadoria nacional e internacional</li><li>Licenciamento e localização cultural</li><li>Estratégia de circulação</li></ul>
+  <p class="proof"><span>Prova</span> <a href="projeto-varilux.html">Festival Varilux de Cinema Francês: 7.500 pessoas por edição, em média</a></p>
+  <p class="mt-2"><a class="btn-v accent" href="vers-apresenta.html">Entrar no catálogo</a></p>
+</div><div class="verbo" role="tabpanel" id="vp-2" aria-labelledby="vt-2" data-verbo-panel="2">
+  <p class="ent ent-servico"><span>Serviço</span>A VERS leva equipamento e equipe</p>
+  <h3>Materializar</h3>
+  <p>Quando a VERS dá forma pública à obra: estrutura, implanta e opera a experiência imersiva em contexto real, diante do público. É o verbo da obra em exibição.</p>
+  <ul><li>Infraestrutura e implantação XR</li><li>Fluxo de público e formação de equipe</li><li>Manutenção e supervisão de temporada</li></ul>
+  <p class="proof"><span>Prova</span> <a href="projeto-impressionistas.html">Uma Noite com os Impressionistas: 120 óculos simultâneos</a></p>
+  <p class="mt-2"><a class="btn-v accent" href="contato.html?frente=operacao">Solicitar proposta</a></p>
+</div><div class="verbo" role="tabpanel" id="vp-3" aria-labelledby="vt-3" data-verbo-panel="3">
+  <p class="ent ent-produto"><span>Produto</span>A VERS entrega o software</p>
+  <h3>Gerenciar<span class="new">Novo</span></h3>
+  <p>Quando a VERS entrega a tecnologia que mantém a obra funcionando: um software próprio que orquestra os óculos, as sessões e o público. É o verbo da operação em escala.</p>
+  <ul><li>Orquestração de óculos e dispositivos</li><li>Controle de sessões e fluxo de público</li><li>Proteção de dados e controle de acesso</li></ul>
+  <p class="proof"><span>Saiba mais</span> <a href="produtos-e-servicos.html#gerenciar">Entender o produto</a></p>
+  <p class="mt-2"><a class="btn-v accent" href="contato.html?frente=software">Falar com um especialista</a></p>
+</div>
+        <div class="map-foot"><button type="button" class="map-nav" data-map-step="-1">Voltar</button><p class="map-progress" aria-live="polite">Portais acesos <b data-map-count>1/4</b></p><button type="button" class="map-nav" data-map-step="1">Seguir</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section g-black vers-dark" id="resultados" data-e="outcomes">
+  <div class="wrap">
+    <div class="d-flex justify-content-between align-items-end gap-4 flex-wrap mb-5">
+      <div class="d-grid gap-3"><p class="eyebrow rule lime">Projetos</p><h2 class="sec-title">Operação em escala</h2></div>
+      <a class="btn-v outline" href="projetos.html">Entrar nos projetos</a>
+    </div>
+    <div class="row g-4"><div class="col-md-6 col-lg-6"><a class="proj" href="projeto-impressionistas.html" data-format="Materializar">
+  <p class="tags"><span class="tag k-servico">Serviço · Materializar</span><span class="tag k-porte">Larga escala</span></p>
+  <p class="num"><span data-count="120">120</span></p>
+  <p class="unit">óculos simultâneos</p>
+  <h3 class="title">Uma Noite com os Impressionistas</h3>
+  <p class="meta">Shopping Cidade São Paulo · 2025–2026</p>
+  <span class="e-mark" aria-hidden="true"></span>
+</a></div><div class="col-md-6 col-lg-6"><a class="proj" href="projeto-circuito.html" data-format="Materializar">
+  <p class="tags"><span class="tag k-servico">Serviço · Materializar</span><span class="tag k-porte">Larga escala</span></p>
+  <p class="num"><small class="pre">até</small><span data-count="8500">8.500</span></p>
+  <p class="unit">pessoas atendidas</p>
+  <h3 class="title">Circuito Sesc de Artes</h3>
+  <p class="meta">Sesc · 2023–2026</p>
+  <span class="e-mark" aria-hidden="true"></span>
+</a></div><div class="col-md-6 col-lg-4"><a class="proj" href="projeto-desalma.html" data-format="Materializar">
+  <p class="tags"><span class="tag k-servico">Serviço · Materializar</span><span class="tag k-porte">Grande porte</span></p>
+  <p class="num"><span data-count="5000">5.000</span><small class="suf">+</small></p>
+  <p class="unit">visitantes em 4 dias</p>
+  <h3 class="title">CCXP · Desalma</h3>
+  <p class="meta">Globo / Globoplay</p>
+  <span class="e-mark" aria-hidden="true"></span>
+</a></div><div class="col-md-6 col-lg-4"><a class="proj" href="projeto-varilux.html" data-format="Distribuir">
+  <p class="tags"><span class="tag k-catalogo">Catálogo · Distribuir</span><span class="tag k-porte">Grande porte</span></p>
+  <p class="num"><span data-count="7500">7.500</span></p>
+  <p class="unit">pessoas por edição, em média</p>
+  <h3 class="title">Festival Varilux de Cinema Francês</h3>
+  <p class="meta">Festival Varilux / Aliança Francesa · desde 2017</p>
+  <span class="e-mark" aria-hidden="true"></span>
+</a></div><div class="col-md-6 col-lg-4"><a class="proj" href="projeto-tinta-e-fogo.html" data-format="Produzir">
+  <p class="tags"><span class="tag k-obra">Obra · Produzir</span><span class="tag k-porte">Médio porte</span></p>
+  <p class="num"><span data-count="2">2</span></p>
+  <p class="unit">prêmios internacionais</p>
+  <h3 class="title">Tinta &amp; Fogo</h3>
+  <p class="meta">Obra própria da VERS · 2023</p>
+  <span class="e-mark" aria-hidden="true"></span>
+</a></div></div>
+    <hr class="hr-rule">
+    <blockquote class="quote sm"><p>Cada obra entregue tem consistência curatorial, qualidade artística e robustez de operação no padrão do circuito internacional de XR.</p><footer>Promessa de marca</footer></blockquote>
+  </div>
+</section>
+
+<section class="section g-indigo vers-indigo" id="planeta" data-e="outcomes" aria-labelledby="planeta-t">
+  <div class="wrap">
+    <header class="sec-head"><p class="eyebrow rule">Onde estivemos</p><h2 class="sec-title" id="planeta-t">Onde a VERS já esteve</h2>
+      <p class="sec-lede">6 lugares em 3 países, com obras, projetos e prêmios.</p></header>
+    <div class="planeta-grid">
+      <div class="planeta" data-planeta data-terra="assets/mapa/terra.png" role="group" aria-label="Planeta com os lugares onde a VERS esteve">
+        <div class="planeta-stage" data-stage></div>
+        <div class="planeta-pins" data-pins></div>
+        <div class="planeta-ctl"><button type="button" data-z="mais" aria-label="Aproximar">+</button><button type="button" data-z="menos" aria-label="Afastar">&minus;</button><button type="button" data-z="mundo">Planeta inteiro</button></div>
+        <p class="planeta-dica">Arraste para girar. Toque num ponto para ir até lá.</p>
+      </div>
+      <div class="d-grid gap-3 align-content-center">
+        <ul class="lugares"><li class="lugar" id="lugar-sao-paulo" data-lugar="sao-paulo" data-nome="São Paulo" data-lat="-23.5505" data-lon="-46.6333"><h3>São Paulo<span>Brasil</span></h3><ul><li data-item><span class="tag k-projeto">Projeto</span><a href="projeto-impressionistas.html">Uma Noite com os Impressionistas</a><span class="yr">2025–2026</span></li><li data-item><span class="tag k-obra">Obra</span><a href="obra-temporada.html">Temporada completa</a><span class="yr">2026</span></li><li data-item><span class="tag k-projeto">Projeto</span><a href="projeto-desalma.html">CCXP · Desalma</a></li></ul></li><li class="lugar" id="lugar-batatais" data-lugar="batatais" data-nome="Batatais" data-lat="-20.8914" data-lon="-47.5836"><h3>Batatais<span>Brasil</span></h3><ul><li data-item><span class="tag k-obra">Obra</span><a href="obra-cidade.html">A cidade por dentro</a><span class="yr">2026</span></li><li data-item><span class="tag k-obra">Obra</span><a href="obra-coletiva.html">Sessão coletiva</a><span class="yr">2026</span></li></ul></li><li class="lugar" id="lugar-barretos" data-lugar="barretos" data-nome="Barretos" data-lat="-20.5573" data-lon="-48.5679"><h3>Barretos<span>Brasil</span></h3><ul><li data-item><span class="tag k-obra">Obra</span><a href="obra-praca.html">Praça pública</a><span class="yr">2026</span></li></ul></li><li class="lugar" id="lugar-ribeirao-preto" data-lugar="ribeirao-preto" data-nome="Ribeirão Preto" data-lat="-21.1775" data-lon="-47.8103"><h3>Ribeirão Preto<span>Brasil</span></h3><ul><li data-item><span class="tag k-obra">Obra</span><a href="obra-tinta-e-fogo.html">Tinta &amp; Fogo</a><span class="yr">2023</span></li></ul></li><li class="lugar" id="lugar-laval" data-lugar="laval" data-nome="Laval" data-lat="48.0698" data-lon="-0.77"><h3>Laval<span>França</span></h3><ul><li data-item><span class="tag k-porte">Prêmio</span><a href="projeto-tinta-e-fogo.html">Tinta &amp; Fogo, Laval Virtual</a><span class="yr">2023</span></li></ul></li><li class="lugar" id="lugar-san-jose" data-lugar="san-jose" data-nome="San José, Califórnia" data-lat="37.3382" data-lon="-121.8863"><h3>San José, Califórnia<span>EUA</span></h3><ul><li data-item><span class="tag k-porte">Prêmio</span><a href="projeto-tinta-e-fogo.html">Tinta &amp; Fogo, Cinequest</a><span class="yr">2023</span></li></ul></li></ul>
+        <p class="lugares-sem">Sem cidade registrada nos dados: <a href="projeto-circuito.html">Circuito Sesc de Artes</a> (4 regiões do estado de SP) · <a href="projeto-varilux.html">Festival Varilux de Cinema Francês</a> (circuito nacional).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section g-subtle">
+  <div class="wrap">
+    <header class="sec-head"><p class="eyebrow rule">Instituições e parceiros</p><h2 class="sec-title">Com quem a VERS trabalha</h2></header>
+    <ul class="logos"><li><img src="assets/clients/sesc.png" alt="Sesc" loading="lazy"></li><li><img src="assets/clients/globo.png" alt="Globo" loading="lazy"></li><li><img src="assets/clients/banco-do-brasil.png" alt="Banco do Brasil" loading="lazy"></li><li><img src="assets/clients/onu.png" alt="ONU" loading="lazy"></li><li><img src="assets/clients/japan-foundation.png" alt="Japan Foundation" loading="lazy"></li><li><img src="assets/clients/anima-mundi.png" alt="Anima Mundi" loading="lazy"></li><li><img src="assets/clients/fundacao-itau.png" alt="Fundação Itaú" loading="lazy"></li><li><img src="assets/clients/embratur.png" alt="Embratur" loading="lazy"></li><li><img src="assets/clients/sebrae.png" alt="Sebrae" loading="lazy"></li><li><img src="assets/clients/senac.png" alt="Senac" loading="lazy"></li><li><img src="assets/clients/usp.png" alt="USP" loading="lazy"></li><li><img src="assets/clients/gamescom.png" alt="Gamescom Latam" loading="lazy"></li></ul>
+  </div>
+</section>
+
+<section class="section g-lime text-center" style="padding-block:var(--space-9)" data-e="exit">
+  <div class="wrap" style="max-width:var(--container-text)">
+    <h2 class="sec-title mb-3">Vamos dar presença à sua obra</h2>
+    <p class="sec-lede mx-auto mb-5" style="color:var(--vers-ink-700)">Comissionamento, distribuição curatorial ou operação de uma exposição XR no Brasil.</p>
+    <a class="btn-v lg" href="contato.html">Falar com a VERS</a>
+    <div class="takeaway" data-e="extension" role="group" aria-labelledby="levar-t">
+      <p class="eyebrow justify-content-center" id="levar-t">Levar com você</p>
+      <p class="d-flex flex-wrap gap-3 justify-content-center"><button type="button" class="btn-v outline" data-copy="VERS · Produtora e distribuidora de cultura imersiva&#10;A instituição contrata um serviço ou um produto da VERS para exibir uma obra.&#10;&#10;Obra (Produzir): A VERS faz a obra.&#10;Catálogo (Distribuir): A VERS leva a obra a circular.&#10;Serviço (Materializar): A VERS leva equipamento e equipe.&#10;Produto (Gerenciar): A VERS entrega o software.&#10;&#10;Contato: contato@vers.com.br">Copiar o mapa da VERS</button><a class="btn-v outline" href="vers-apresenta.html">Solicitar catálogo completo</a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="row g-5">
+      <div class="col-lg-3"><a class="lockup" href="index.html"><img src="assets/graphics/logotipo-white.png" alt="VERS" width="124" height="34"><span>Produtora e distribuidora de cultura imersiva</span></a></div>
+      <div class="col-6 col-md-3 col-lg-2 offset-lg-1"><h2>Frentes</h2><ul><li><a href="produtos-e-servicos.html#produzir">Produzir</a></li><li><a href="produtos-e-servicos.html#distribuir">Distribuir</a></li><li><a href="produtos-e-servicos.html#materializar">Materializar</a></li><li><a href="produtos-e-servicos.html#gerenciar">Gerenciar</a></li></ul></div>
+      <div class="col-6 col-md-3 col-lg-2"><h2>VERS Apresenta</h2><ul><li><a href="vers-apresenta.html">Catálogo</a></li><li><a href="produtos-e-servicos.html#distribuir">Licenciamento</a></li><li><a href="vers-apresenta.html">Circulação</a></li></ul></div>
+      <div class="col-6 col-md-3 col-lg-2"><h2>Institucional</h2><ul><li><a href="index.html#nucleo">Sobre a VERS</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html">Imprensa</a></li><li><a href="assets/Brandbook/BRANDBOOK_VERS_RGB_10-2026.pdf">Brandbook</a></li></ul></div>
+      <div class="col-6 col-md-3 col-lg-2"><h2>Contato</h2><ul><li><a href="mailto:contato@vers.com.br">contato@vers.com.br</a></li><li><a href="https://www.instagram.com/vers_xr" rel="noopener">Instagram</a></li></ul></div>
+    </div>
+    <div class="bottom"><p class="tagline"><span>Onde a cultura</span><span>ganha presença</span></p><p class="legal">© 2026 VERS · São Paulo, Brasil</p></div>
+  </div>
+</footer>
+<div id="toast-slot" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="site/js/site.js"></script>
+<script type="module" src="site/js/game.js"></script>
+<script type="module" src="site/js/planeta.js"></script>
+</body>
+</html>
